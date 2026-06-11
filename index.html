@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Areeb Ahmer · Back-end Engineer & Cloud Architect</title>
+  <meta name="description" content="Areeb Ahmer — back-end engineer and cloud architect. I build the invisible engines behind enterprise software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Intro loader -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <span class="intro__logo">AA<span class="accent">.</span></span>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo" data-magnetic>AA<span class="accent">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about"><span>01</span> About</a>
+      <a href="#craft"><span>02</span> Craft</a>
+      <a href="#work"><span>03</span> Work</a>
+      <a href="#contact" class="nav__cta" data-magnetic>Let's Talk</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__blob hero__blob--1" data-mouse="0.04" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" data-mouse="-0.03" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal" data-reveal="up">Back-end Engineer · Cloud Architect</p>
+        <h1 class="hero__name">
+          <span class="split" data-split>Areeb</span><br />
+          <span class="split outline" data-split>Ahmer</span>
+        </h1>
+        <p class="hero__tag reveal" data-reveal="up">
+          I engineer the <em>invisible</em> — the APIs, pipelines and cloud systems
+          that keep serious software alive while everyone's looking at the UI.
+        </p>
+        <p class="hero__role reveal" data-reveal="up">
+          Currently: <span class="typing" id="typing"></span><span class="caret">_</span>
+        </p>
+        <div class="hero__actions reveal" data-reveal="up">
+          <a href="#work" class="btn btn--primary" data-magnetic>See the work</a>
+          <a href="#contact" class="btn btn--ghost" data-magnetic>Say hello</a>
+        </div>
+      </div>
+
+      <div class="hero__photo" data-speed="-0.06">
+        <div class="hero__ring" aria-hidden="true"></div>
+        <div class="hero__ring hero__ring--2" aria-hidden="true"></div>
+        <img src="profile-pic.png" alt="Portrait of Areeb Ahmer" class="hero__img float" />
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-wheel"></span>
+      </a>
+    </section>
+
+    <!-- ===== DUAL MARQUEE ===== -->
+    <div class="marquee marquee--solid" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Build</span><span>✦</span><span>Ship</span><span>✦</span><span>Scale</span><span>✦</span><span>Automate</span><span>✦</span><span>Repeat</span><span>✦</span>
+        <span>Build</span><span>✦</span><span>Ship</span><span>✦</span><span>Scale</span><span>✦</span><span>Automate</span><span>✦</span><span>Repeat</span><span>✦</span>
+        <span>Build</span><span>✦</span><span>Ship</span><span>✦</span><span>Scale</span><span>✦</span><span>Automate</span><span>✦</span><span>Repeat</span><span>✦</span>
+      </div>
+    </div>
+    <div class="marquee marquee--ghost" aria-hidden="true">
+      <div class="marquee__track marquee__track--reverse">
+        <span>.NET Core</span><span>·</span><span>Flutter</span><span>·</span><span>Kubernetes</span><span>·</span><span>Azure</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>SQL</span><span>·</span><span>Firebase</span><span>·</span><span>CI/CD</span><span>·</span>
+        <span>.NET Core</span><span>·</span><span>Flutter</span><span>·</span><span>Kubernetes</span><span>·</span><span>Azure</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>SQL</span><span>·</span><span>Firebase</span><span>·</span><span>CI/CD</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <h2 class="section__title"><span class="section__num">01</span> <span class="split" data-split>The short version</span></h2>
+      <div class="about__grid">
+        <div class="about__col">
+          <p class="about__lead reveal" data-reveal="up">
+            I'm a back-end engineer who treats server-side code like craft, not plumbing.
+          </p>
+          <p class="about__text reveal" data-reveal="up">
+            Over four years I've shipped the kind of software that doesn't get screenshots on
+            dribbble but quietly runs entire businesses — audit platforms, risk management
+            systems for major Gulf enterprises, and a fintech product getting ready for launch.
+            <strong>.NET</strong> sits at the core, <strong>Flutter</strong> is my second blade for
+            when the backend needs a face, and cloud wraps around all of it. I'm not precious about
+            languages either — hand me a new framework and I'll be productive in it before the
+            coffee goes cold.
+          </p>
+          <p class="about__text reveal" data-reveal="up">
+            When I'm not on product work, I'm building tools: published <strong>NuGet packages</strong>,
+            <strong>VS Code extensions</strong>, and internal utilities that make colleagues' day jobs
+            measurably less annoying. If something gets done manually twice, I'll automate it the third time.
+          </p>
+        </div>
+        <ul class="about__facts">
+          <li class="reveal" data-reveal="right"><span>⚡</span> Backend by expertise, polyglot by attitude</li>
+          <li class="reveal" data-reveal="right"><span>📱</span> Flutter on the side — one codebase, both stores</li>
+          <li class="reveal" data-reveal="right"><span>☁️</span> Microsoft Certified — Azure Administrator (AZ-104)</li>
+          <li class="reveal" data-reveal="right"><span>📦</span> Open-source toolsmith — NuGet & VS Code marketplace</li>
+          <li class="reveal" data-reveal="right"><span>🔁</span> Allergic to repetitive manual work</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CRAFT (services) ===== -->
+    <section class="section craft" id="craft">
+      <h2 class="section__title"><span class="section__num">02</span> <span class="split" data-split>What I'm good at</span></h2>
+      <div class="craft__rows">
+        <div class="craft-row reveal" data-reveal="up">
+          <span class="craft-row__num">01</span>
+          <h3>Backend Engineering</h3>
+          <p>APIs that don't flinch under load. Clean architecture, microservices when they earn their keep, and databases modeled by someone who actually likes SQL.</p>
+          <div class="tags"><span>.NET Core</span><span>SQL</span><span>Microservices</span><span>REST</span></div>
+        </div>
+        <div class="craft-row reveal" data-reveal="up">
+          <span class="craft-row__num">02</span>
+          <h3>Cross-Platform Apps</h3>
+          <p>When a product needs to live in people's pockets, I reach for Flutter. Clinic and salon management apps, real-time chat, AR modules wired into native apps — shipped quietly, used daily.</p>
+          <div class="tags"><span>Flutter</span><span>iOS · Android</span><span>AR Integration</span><span>Real-time Chat</span></div>
+        </div>
+        <div class="craft-row reveal" data-reveal="up">
+          <span class="craft-row__num">03</span>
+          <h3>Cloud Architecture</h3>
+          <p>Designing systems that scale on demand and don't surprise anyone on the invoice. Certified on Azure, fluent on AWS, comfortable with Firebase.</p>
+          <div class="tags"><span>Azure · AZ-104</span><span>AWS</span><span>Firebase</span></div>
+        </div>
+        <div class="craft-row reveal" data-reveal="up">
+          <span class="craft-row__num">04</span>
+          <h3>DevOps & Automation</h3>
+          <p>Containers, clusters and pipelines. If a deployment needs a human and a prayer, I consider it a bug — and then I fix it.</p>
+          <div class="tags"><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>IaC</span></div>
+        </div>
+        <div class="craft-row reveal" data-reveal="up">
+          <span class="craft-row__num">05</span>
+          <h3>Developer Tooling</h3>
+          <p>Packages, extensions and utilities built for other developers — the most demanding users on earth. Shipped to NuGet, the VS Code marketplace, and teammates' desktops.</p>
+          <div class="tags"><span>NuGet</span><span>VS Code Extensions</span><span>Internal Tools</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="section work" id="work">
+      <h2 class="section__title"><span class="section__num">03</span> <span class="split" data-split>Things I've built</span></h2>
+      <p class="work__note reveal" data-reveal="up">Most of my work lives behind enterprise walls and NDAs — here's the silhouette of it.</p>
+      <div class="work__grid">
+        <article class="work-card reveal" data-reveal="zoom" data-tilt>
+          <span class="work-card__index">A</span>
+          <h3>Enterprise Audit Platform</h3>
+          <p>A full audit lifecycle engine — planning, fieldwork, findings, reporting — doing the heavy lifting for compliance teams at scale.</p>
+          <div class="tags"><span>Enterprise</span><span>.NET</span><span>Compliance</span></div>
+        </article>
+        <article class="work-card reveal" data-reveal="zoom" data-tilt>
+          <span class="work-card__index">B</span>
+          <h3>Risk Intelligence Systems</h3>
+          <p>Risk management platforms running quietly inside some of the Gulf region's largest organizations. The kind of software where "it just works" is the entire job description.</p>
+          <div class="tags"><span>Enterprise</span><span>Cloud</span><span>Security</span></div>
+        </article>
+        <article class="work-card reveal" data-reveal="zoom" data-tilt>
+          <span class="work-card__index">C</span>
+          <h3>Fintech · In Stealth 🤫</h3>
+          <p>A payments-grade fintech product preparing for launch in Bahrain. Cloud-native from the first commit, built to handle real money and real scrutiny.</p>
+          <div class="tags"><span>Fintech</span><span>Cloud-native</span><span>Coming Soon</span></div>
+        </article>
+        <article class="work-card reveal" data-reveal="zoom" data-tilt>
+          <span class="work-card__index">D</span>
+          <h3>The Toolbox</h3>
+          <p>NuGet packages, VS Code extensions and internal utilities — small, sharp tools that save other developers hours. Built because I needed them; shipped because others did too.</p>
+          <div class="tags"><span>Open Source</span><span>NuGet</span><span>VS Code</span></div>
+        </article>
+      </div>
+
+      <div class="shiplog reveal" data-reveal="up">
+        <p class="shiplog__title">Also on the shipping log</p>
+        <ul class="shiplog__list">
+          <li><strong>Infratech SSO</strong><span>alert management platform — the one that landed an AT&amp;T deal</span></li>
+          <li><strong>Gridiron Grades</strong><span>scouting & prospect management for NFL talent</span></li>
+          <li><strong>ChefZone</strong><span>restaurant management, front of house to back</span></li>
+          <li><strong>Salesvare</strong><span>sales operations platform</span></li>
+          <li><strong><a href="https://cowatch.cc" target="_blank" rel="noopener">Cowatch.cc</a></strong><span>virtual browser sharing for watch parties — live right now</span></li>
+          <li><strong>Flutter builds</strong><span>veterinary clinic & salon management apps, chat apps, AR modules</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== BIG STATEMENT ===== -->
+    <section class="statement">
+      <p class="statement__text split" data-split>Good backend is invisible. Great backend is inevitable.</p>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <h2 class="contact__big">
+        <span class="split" data-split>Got something</span><br />
+        <span class="split accent" data-split>worth building?</span>
+      </h2>
+      <p class="contact__sub reveal" data-reveal="up">Backend, mobile, cloud, DevOps, tooling — if it's interesting, I'm listening.</p>
+      <div class="contact__links reveal" data-reveal="up">
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/areeb-ahmer-4539351a2/" target="_blank" rel="noopener" data-magnetic>LinkedIn</a>
+        <a class="btn btn--ghost" href="mailto:areebahmer.dev@gmail.com" data-magnetic>areebahmer.dev@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Areeb Ahmer — handcrafted, no template harmed</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
